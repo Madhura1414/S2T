@@ -1,4 +1,30 @@
-# INLCUDE - Isolated Indian Sign Language Recognition
+# Our Contribution
+Built a dataset that can used with this code or any other code in general
+
+Took the Initiative to build the dataset in kannada sign language with corresponding kannada text that will help in the training of the model
+
+## Dataset description
+
+| Characteristic	| Data |
+|-----------------|------|
+|Word	| 36
+|Sentence |	 16
+|Character |	 61
+|Videos 	|388
+|Frame Rate |	30fps 
+|Resolution |	1080 x 1920| 
+
+## Result comaparison
+|Dataset|	Feature Augmentation|	Pose Estimation Method	|Encoder	|Decoder	|Accuracy|
+|-------|--------------------|-------------------------|---------|---------|--------|
+|INCLUDE-50	 |         No|	OpenPose	|Mobile net V2|	BiLSTM	|73.9|
+|Our Dataset	|         Yes|	Media pipe	| Mobile Net V2	 |BiLSTM	  |81.69|
+
+## Train and Validation Accuracy
+![image](https://github.com/Madhura1414/S2T/assets/84361102/df4e1ff6-4463-458b-83db-bb531fed217f)
+
+
+## INLCUDE - Isolated Indian Sign Language Recognition
 
 This repository contains code for training models on [INCLUDE](https://zenodo.org/record/4010759) dataset
 
