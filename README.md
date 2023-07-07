@@ -1,7 +1,7 @@
 # Our Contribution
-Built a dataset that can used with this code or any other code in general
+Built a dataset that can used with this code or any other code in general.
 
-Took the Initiative to build the dataset in kannada sign language with corresponding kannada text that will help in the training of the model
+Took the Initiative to build the dataset in kannada sign language with corresponding kannada text that will help in the training of the model.
 
 ## Dataset description
 
