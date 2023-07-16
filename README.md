@@ -14,6 +14,19 @@ Took the Initiative to build the dataset in kannada sign language with correspon
 |Frame Rate |	30fps 
 |Resolution |	1080 x 1920| 
 
+## Feature Augmentation
+Feature augmentation can help improve the generalization capability of a model. By augmenting the features, you introduce variations in the learned representations, which can enhance the model's ability to handle variations and improve its performance on unseen data. This can lead to better generalization and reduced overfitting.
+
+In this work we prefered augmentations in the embedding space of deep neural networks, rather than as a pre-processing step in pixel-space. It identifies
+minority class examples in the training set whose nearest neighbors contain adversary class members. SMOTE then takes certain point as base and creates k-means neighbours around it.  
+
+Advantages of feature augmentation over pixel augmentation are:
+
+1. No changes in training time. Since physical augmentation results in the increase of number of video samples, it will increase the training time.
+2. Robustness to Noise: Feature augmentation techniques can be more robust to noise and distortions present in the data. By manipulating features, the  augmentation process is less affected by pixel-level noise.
+   
+CNN features embeddings are extracted from npy files. The arrays are given to the smote function in SMOTE_augmentation.py
+
 ## Result comaparison
 |Dataset|	Feature Augmentation|	Pose Estimation Method	|Encoder	|Decoder	|Accuracy|
 |-------|--------------------|-------------------------|---------|---------|--------|
@@ -71,4 +84,6 @@ numpages = {10},
 series = {MM '20}
 }
 ```
-
+```
+Dablain, Damien, et al. "Efficient augmentation for imbalanced deep learning." arXiv preprint arXiv:2207.06080 (2022).
+```
